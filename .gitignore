@@ -1,0 +1,47 @@
+# Elixir / Mix
+/_build/
+/deps/
+/cover/
+/doc/
+/.fetch
+erl_crash.dump
+*.ez
+*.beam
+/baybay-*.tar
+
+# Phoenix
+/priv/static/assets/
+/priv/static/cache_manifest.json
+/priv/static/**/*.gz
+/priv/plts/
+
+# Frontend dependencies
+/assets/node_modules/
+/node_modules/
+npm-debug.log*
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+/config/*.secret.exs
+*.pem
+*.key
+
+# Logs and temporary files
+*.log
+/tmp/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE and editor
+/.idea/
+/.vscode/
+*.swp
+
+# Personal documentation
+/docs/LEARNING_LOG.md
