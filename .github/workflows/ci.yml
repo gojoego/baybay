@@ -68,3 +68,7 @@ jobs:
 
       - name: Run tests
         run: mix test
+      - name: Scan source code for vulnerabilities
+        run: mix sobelow --exit
+      - name: Audit Hex dependencies
+        run: mix hex.audit
