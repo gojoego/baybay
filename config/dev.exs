@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :baybay, Baybay.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "gojoego",
+  password: "",
   hostname: "localhost",
   database: "baybay_dev",
   stacktrace: true,

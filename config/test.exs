@@ -6,8 +6,8 @@ import Config
 # to provide built-in test partitioning in CI environment.
 # Run `mix help test` for more information.
 config :baybay, Baybay.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "gojoego",
+  password: "",
   hostname: "localhost",
   database: "baybay_test#{System.get_env("MIX_TEST_PARTITION")}",
   pool: Ecto.Adapters.SQL.Sandbox,
