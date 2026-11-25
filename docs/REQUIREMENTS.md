@@ -1,33 +1,74 @@
-# Requirements
+# Product Requirements
+
+## MVP Objective
+
+Deliver an audio-first Spanish-to-English language learning experience using manually prepared music-based lessons.
 
 ## Functional Requirements
 
-### MVP
+### Song Catalog
 
-- FR-01: Search and select songs.
-- FR-02: Display song title, artist, and lyrics.
-- FR-03: Display original lyrics alongside translations.
-- FR-04: Select a target language.
-- FR-05: Persist song metadata and authorized content.
+- Display available songs and audio lessons.
+- Display song titles and artist information when available.
+- Allow users to select a lesson.
+- Initially support three curated songs.
 
-### Future
+### Audio Player
 
-- FR-06: Provide contextual and literal translations.
-- FR-07: Display vocabulary and grammatical explanations.
-- FR-08: Save songs and vocabulary.
-- FR-09: Support user accounts.
-- FR-10: Synchronize lyrics with music playback.
+- Play and pause lessons.
+- Seek within a lesson.
+- Display playback progress and duration.
+- Support adjustable playback speed.
+- Support continuous listening without requiring interaction between lyric segments.
 
-## Nonfunctional Requirements
+### Lesson Content
 
-- NFR-01: Responsive and accessible interface.
-- NFR-02: Secure handling of credentials and user data.
-- NFR-03: Automated testing of core functionality.
-- NFR-04: Graceful handling of external API failures.
-- NFR-05: Minimal infrastructure costs.
-- NFR-06: Compliance with content licensing requirements.
-- NFR-07: Operational isolation from the Moriah Project.
+Each lesson must include:
 
-## Status
+- Original song segments.
+- Spoken vocabulary translations.
+- Relevant verb conjugations and grammatical explanations.
+- Contextual explanations of idioms when applicable.
+- Natural English translations of complete lyric segments.
 
-Preliminary requirements pending refinement.
+Instruction must be concise, with reduced repetition for previously explained vocabulary.
+
+### Content Preparation
+
+- Manually prepare lesson scripts and lyric timestamps.
+- Generate prototype narration using macOS text-to-speech.
+- Assemble music and narration using FFmpeg.
+- Export completed lessons as MP3 files.
+- Populate the initial catalog through database seeds.
+
+## Non-Functional Requirements
+
+- Responsive desktop and mobile interface.
+- Minimal user interaction during playback.
+- Accessible audio controls.
+- Secure application configuration.
+- Automated testing and continuous integration.
+- No required paid third-party APIs for the prototype.
+- Authorized use of all distributed content.
+
+## Prototype Acceptance Criteria
+
+- One 30–60-second Spanish song excerpt is converted into a complete audio lesson.
+- Song and lesson metadata are stored in PostgreSQL.
+- The lesson appears in the application catalog.
+- Users can play, pause, seek, and adjust playback speed.
+- Music and narration play continuously in the intended sequence.
+- Automated tests and security checks pass.
+
+## Out of Scope
+
+- User authentication.
+- User-uploaded songs.
+- Automated lesson generation.
+- AI-powered translations.
+- External music and lyrics APIs.
+- Interactive transcripts and quizzes.
+- Learning progress tracking.
+- Multiple language pairs.
+- Administrative portal.
+- Offline downloads.
