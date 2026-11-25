@@ -4,11 +4,11 @@
 
 - [x] Create Git repository
 - [x] Add proprietary license
-- [ ] Establish project documentation
-- [ ] Configure Elixir development environment
-- [ ] Initialize Phoenix application
-- [ ] Configure local PostgreSQL
-- [ ] Verify application startup
+- [x] Establish project documentation
+- [x] Configure Elixir development environment
+- [x] Initialize Phoenix application
+- [x] Configure local PostgreSQL
+- [x] Verify application startup
 
 ## Milestone 2 — Core Application
 

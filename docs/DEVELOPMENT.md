@@ -33,7 +33,7 @@ mix setup
 mix phx.server
 ```
 
-Local URL: http://localhost:4000
+Local URL: http://localhost:4001
 
 ## Interactive Development
 
